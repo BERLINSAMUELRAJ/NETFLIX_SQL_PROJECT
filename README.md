@@ -41,3 +41,9 @@ CREATE TABLE netflix
 ## Business Problems and Solutions
 
 ### 1. Count the Number of Movies vs TV Shows
+```sql
+SELECT TYPE, COUNT(TYPE) AS TOTAL_COUNT FROM NETFLIX_TITLES
+GROUP BY TYPE
+ORDER BY TOTAL_COUNT DESC;
+GO
+```
